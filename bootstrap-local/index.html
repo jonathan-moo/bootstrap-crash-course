@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+    <title>Bootstrap Frontend Example By Jonathan Moo</title>
+</head>
+
+<body>
+    <!-- Start of Navigtion Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">Bootstrap Example</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navigtion Bar -->
+
+    <!-- Start of Main Content -->
+    <div class="container">
+        <div class="row border">
+            <h2>Getting Started</h2>
+            <p>By importing/including the CSS files from Bootstrap, we are using the toolkit's styling elements. This is
+                found in the <code>head</code> section of this HTML document.</p>
+
+            <p>By importing/including the JS files from Bootstrap, we are using Bootstrap's default interactivity within
+                the toolkit. This is found in the <code>body</code> section, at the bottom of this HTML document.</p>
+
+            <p>I have included a <code>style.css</code> file to add customization within this page. All customization
+                should be at the tail-end of the imports/includes within the document, because it can overwrite
+                Bootstrap's CSS.</p>
+
+            <h3>Layouts</h3>
+            <p>As with any design work, you want to start with the layout of the page.</p>
+
+            <p>This is to ensure there is a flow that users can digest your content. Without a digestible flow, it is
+                going to make it difficult for users to view your content.</p>
+
+            <h4>Containers</h4>
+            <p>In this block, we are using the CSS class <code>container</code>, which is found in: <a
+                    href="https://getbootstrap.com/docs/5.3/layout/containers/">https://getbootstrap.com/docs/5.3/layout/containers/</a>
+            </p>
+
+            <ul>
+                <li>In short, <code>container</code> gives the area or real estate where your content should display in.
+                </li>
+                <li>It follows a default grid configuration which you can find from the above link. There is a
+                    pre-defined size measured by pixels.</li>
+                <li>Use <code>container</code> CSS class as default, and experiment with different configuration
+                    settings only
+                    when you're familiar after experimentation.</li>
+                <li>For advanced users, you might want to consider the <code>container-fluid</code> CSS class where it
+                    adapts to the real estate based on the screen size of a browser client.</li>
+            </ul>
+
+            <h4>Rows</h4>
+            <p>The <code>row</code> div class help you to define a horizontal area where you want your content to
+                manifest.</p>
+
+            <p>By placing specific rows, you can style your content in a table-like manner.</p>
+
+        </div>
+
+        <div class="row border">
+            <p>This is row 1.</p>
+        </div>
+        <div class="row border">
+            <p>This is row 2.</p>
+        </div>
+
+        <div class="row border">
+            <h4 class="header-margin">Columns</h4>
+            <p>To achieve a grid-like content, columns can be placed within rows.</p>
+
+            <p>There are many ways to build columns, but the simplest way that I have found was to think of it as 12
+                segments within a row.</p>
+        </div>
+        <div class="row border">
+            <div class="col col-lg-1 border">Column 1</div>
+            <div class="col col-lg-1 border">Column 2</div>
+            <div class="col col-lg-1 border">Column 3</div>
+            <div class="col col-lg-1 border">Column 4</div>
+            <div class="col col-lg-1 border">Column 5</div>
+            <div class="col col-lg-1 border">Column 6</div>
+            <div class="col col-lg-1 border">Column 7</div>
+            <div class="col col-lg-1 border">Column 8</div>
+            <div class="col col-lg-1 border">Column 9</div>
+            <div class="col col-lg-1 border">Column 10</div>
+            <div class="col col-lg-1 border">Column 11</div>
+            <div class="col col-lg-1 border">Column 12</div>
+            <div class="col col-lg-1 border">Column 13</div>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li>Every of the columns are as follows:
+                    <code>&lt;div class="col col-lg-1 border">Column #&lt;/div></code>, where:
+                </li>
+                <ul>
+                    <li>The <code>col</code> class denotes that the div tag is a column.</li>
+                    <li>The <code>col-lg-#</code> denotes the proportion of area between 1 to 12. <code>lg</code> is a
+                        configuration to optimize to certain device's width.</li>
+                    <li>We are using <code>col-lg-1</code> since we want 1 portion of the row for a column. If the total
+                        amount of portion goes beyond 12 in a row, it bleeds beyond to the next line, and so we avoid
+                        going beyond 12.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <h2><code>container-fluid</code> Example</h2>
+            <p>Unlike <code>container</code> which has a fixed width, <code>container-fluid</code> takes the entire
+                space from left to right and adapts according to a client's web browser.</p>
+
+            <p>That's the reason why the content starts from the very beginning of this area. If you're not proficient
+                with <code>container-fluid</code>, stick with <code>container</code>.</p>
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 border">
+                <h2>Left Sidebar</h2>
+            </div>
+            <div class="col col-lg-10 border">
+                <h2>Main Content</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2 class="header-margin">Closing Thoughts</h2>
+        <p>The sky is the limit in terms of how you want to design your page with Bootstrap. The goal here is to give
+            you a template which you can use, and how you want to display your content within this layout is up to you.
+        </p>
+    </div>
+    <!-- End of Main Content -->
+
+
+    <footer>
+
+    </footer>
+
+    <!-- JS scripts loaded at the tail end for SEO purposes -->
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
